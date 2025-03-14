@@ -5,8 +5,8 @@ XNL - Real-Time FinTech Dashboard
 This project is a real-time financial analysis and sentiment tracking system that integrates various components to provide live stock data, market sentiment analysis, and a financial dashboard.
 
 🔹 Technologies Used:
-✅ FastAPI & Streamlit for the backend
-✅ Next.js & Tailwind CSS for the frontend
+✅ FastAPI & railway for the backend
+✅ Next.js & Streamlit for the frontend
 ✅ Alpha Vantage, Yahoo Finance & NewsAPI for data sourcing
 ✅ VaderSentiment for AI-powered sentiment analysis
 
