@@ -15,9 +15,7 @@ def read_root():
             "/cryptos": "Get list of default cryptocurrencies",
             "/stock/{symbol}": "Get price for any stock symbol (e.g., /stock/AAPL)",
             "/crypto/{coin}": "Get price for any cryptocurrency (e.g., /crypto/bitcoin)"
-        },
-        "example_stocks": DEFAULT_STOCKS[:5],
-        "example_cryptos": DEFAULT_CRYPTOS[:5]
+        }
     }
 
 @app.get("/stocks")
