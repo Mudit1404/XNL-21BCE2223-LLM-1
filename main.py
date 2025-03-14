@@ -3,19 +3,13 @@ import requests
 
 app = FastAPI()
 
-DEFAULT_STOCKS = ["AAPL", "GOOGL", "MSFT", "AMZN", "META"]
-DEFAULT_CRYPTOS = ["bitcoin", "ethereum", "dogecoin", "solana", "cardano"]
+DEFAULT_STOCKS = ["AAPL", "GOOGL", "MSFT", "AMZN", "META", "TSLA", "NVDA", "JPM", "V", "WMT", "DIS", "NFLX", "PYPL", "INTC", "AMD"]
+DEFAULT_CRYPTOS = ["bitcoin", "ethereum", "dogecoin", "solana", "cardano", "polkadot", "ripple", "binancecoin", "avalanche-2", "chainlink", "polygon", "uniswap", "litecoin", "stellar", "monero"]
 
 @app.get("/")
 def read_root():
     return {
         "message": "Welcome to Live Market Data - FinTech API",
-        "endpoints": {
-            "/stocks": "Get list of default stocks",
-            "/cryptos": "Get list of default cryptocurrencies",
-            "/stock/{symbol}": "Get specific stock price",
-            "/crypto/{coin}": "Get specific crypto price"
-        }
     }
 
 @app.get("/stocks")
