@@ -92,7 +92,7 @@ git clone https://github.com/Mudit1404/XNL-21BCE2223-LLM-1.git
 ```
 
 ```bash
-cd XNL-Real-Time-FinTech-Dashboard
+cd XNL-21BCE2223-LLM-1
 ```
 
 2️⃣ Install Backend Dependencies
