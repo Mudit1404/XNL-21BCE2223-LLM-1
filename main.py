@@ -10,7 +10,21 @@ DEFAULT_CRYPTOS = ["bitcoin", "ethereum", "dogecoin", "solana", "cardano"]
 def read_root():
     return {
         "message": "Welcome to Live Market Data - FinTech API",
+        "endpoints": {
+            "/stocks": "Get list of default stocks",
+            "/cryptos": "Get list of default cryptocurrencies",
+            "/stock/{symbol}": "Get specific stock price",
+            "/crypto/{coin}": "Get specific crypto price"
+        }
     }
+
+@app.get("/stocks")
+def get_default_stocks():
+    return {"default_stocks": DEFAULT_STOCKS}
+
+@app.get("/cryptos")
+def get_default_cryptos():
+    return {"default_cryptos": DEFAULT_CRYPTOS}
 
 @app.get("/stock/{symbol}")
 def get_stock_price(symbol: str):
