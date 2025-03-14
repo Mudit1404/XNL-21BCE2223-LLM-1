@@ -87,10 +87,13 @@ I thank XNL Innovations for their guidance and for allowing me to contribute to 
 🚀 How to Run the Project Locally
 
 1️⃣ Clone the Repository
-
+`
 git clone https://github.com/Mudit1404/XNL-21BCE2223-LLM-1.git
+`
 
+`
 cd XNL-Real-Time-FinTech-Dashboard
+`
 
 2️⃣ Install Backend Dependencies
 
