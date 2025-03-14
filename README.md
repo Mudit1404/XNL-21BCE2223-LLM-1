@@ -91,25 +91,31 @@ I thank XNL Innovations for their guidance and for allowing me to contribute to 
 git clone https://github.com/Mudit1404/XNL-21BCE2223-LLM-1.git
 ```
 
-`
+```bash
 cd XNL-Real-Time-FinTech-Dashboard
-`
+```
 
 2️⃣ Install Backend Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 3️⃣ Run FastAPI Backend Locally
 
+```bash
 uvicorn backend:app --reload
+```
 
 4️⃣ Run Frontend Locally
 
+```bash
 cd frontend
 
 npm install
 
 npm run dev
+```
 
 📌 Live Deployment Links
 
