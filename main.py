@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 import requests
 
@@ -10,11 +9,7 @@ DEFAULT_CRYPTOS = ["bitcoin", "ethereum", "dogecoin", "solana", "cardano"]
 @app.get("/")
 def read_root():
     return {
-        "message": "Welcome to Live Market Data FinTech API",
-        "endpoints": {
-            "/stock/{symbol}": "Get real-time stock prices (e.g., AAPL, GOOGL, etc.)",
-            "/crypto/{coin}": "Get real-time crypto prices (e.g., bitcoin, ethereum, etc.)"
-        }
+        "message": "Welcome to Live Market Data - FinTech API",
     }
 
 @app.get("/stock/{symbol}")
