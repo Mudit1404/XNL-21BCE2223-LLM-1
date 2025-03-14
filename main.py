@@ -10,6 +10,14 @@ DEFAULT_CRYPTOS = ["bitcoin", "ethereum", "dogecoin", "solana", "cardano", "polk
 def read_root():
     return {
         "message": "Welcome to Live Market Data - FinTech API",
+        "available_endpoints": {
+            "/stocks": "Get list of default stocks",
+            "/cryptos": "Get list of default cryptocurrencies",
+            "/stock/{symbol}": "Get price for any stock symbol (e.g., /stock/AAPL)",
+            "/crypto/{coin}": "Get price for any cryptocurrency (e.g., /crypto/bitcoin)"
+        },
+        "example_stocks": DEFAULT_STOCKS[:5],
+        "example_cryptos": DEFAULT_CRYPTOS[:5]
     }
 
 @app.get("/stocks")
